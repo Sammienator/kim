@@ -23,6 +23,7 @@ const ThreeColumnGallery = () => {
       imageSrc: gal5,
       imageText: gal6,
     },
+  ,
   ];
 
   return (
