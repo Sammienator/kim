@@ -24,7 +24,7 @@ const Customized = () => {
       heading: 'Trousers',
       text: 'Embrace The Future Of Fashion With Our Customized Trouser And Discover The Perfect Blend Of Comfort, Quality, And Individuality. '
     },
-  ,
+  
   ];
 
   return (
