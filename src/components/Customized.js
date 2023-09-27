@@ -35,9 +35,9 @@ const Customized = () => {
     <div className="ml-8 mr-8 mt-4 grid grid-cols-3 gap-4 ">
       {items.map((item, index) => (
         <div key={index} className="text-center">
-          <img src={item.imageSrc} alt={`Item ${index + 1}`} className="w-80 mb-2 ml-8" />
+          <img src={item.imageSrc} alt={`Item ${index + 1}`} className="w-80 mb-2 ml-6" />
           <h1 id='ruf' className="text-3xl ">{item.heading}  </h1>
-          <p id='ruf' className="text-xl text-center mr-8 ">{item.text}  </p>
+          <p id='ruf' className="text-sm text-center mr-8 ">{item.text}  </p>
         </div>
       ))}
     </div>
