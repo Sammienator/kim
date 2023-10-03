@@ -5,6 +5,8 @@ import Gallery from './components/Gallery';
 import Best from './components/Best';
 import Exclusive from './components/Exclusive';
 import Customized from './components/Customized';
+import Testimonial from './components/Testimonial';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -14,6 +16,8 @@ function App() {
     <Best/>
     <Exclusive/>
     <Customized/>
+    <Testimonial/>
+    <Footer/>
     </>
   );
 }

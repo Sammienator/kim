@@ -10,7 +10,7 @@ const Exclusive = () => {
 <div className="w-full h-full flex justify-center items-center">
       <img
         src= {Exclusi}
-        alt="Your Image"
+        alt="Your Ima"
         className="w-4/5 h-4/5 object-contain"
       />
     </div>
