@@ -8,10 +8,12 @@ import Customized from './components/Customized';
 import Testimonial from './components/Testimonial';
 import Footer from './components/Footer';
 import PricingSection from './components/PricingSection';
+import Navbar from './components/Navbar';
 
 function App() {
   return (
     <>
+    <Navbar/>
     <Home/>
     <PricingSection/>
    
