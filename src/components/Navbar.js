@@ -4,7 +4,7 @@ import higene from '../assets/higene.png'
 
 const Navbar = () => {
   return (
-    <nav className= "bg-[#B7FFFB] flex justify-between p-4">
+    <nav className= "bg-[#B7FFFB] flex justify-between ">
       <div className="flex items-center">
         {/* Brand */}
     
@@ -24,8 +24,8 @@ const Navbar = () => {
       </div>
       <div className="flex items-center p-4 m-4 hover:text-aqua-900  cursor-pointer">
         {/* Shopping Cart and Login Button */}
-        <FaShoppingCart className="text-gray-700 m-4 " />
-        <FaUser className="text-gray-700 " />
+        <FaShoppingCart className="text-gray-700 text-3xl m-4 " />
+        <FaUser className="text-gray-700 text-3xl " />
       </div>
     </nav>
   );
