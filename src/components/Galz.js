@@ -12,14 +12,14 @@ import best7 from '../assets/best7.png'
 
 const Galz = () => {
   const images = [
-    { id: 1, src: best1, price: '$10', rating: 4 },
-    { id: 2, src: best2, price: '$15', rating: 5 },
-    { id: 3, src: best3, price: '$20', rating: 3 },
-    { id: 4, src: best4, price: '$12', rating: 4 },
-    { id: 5, src: best5, price: '$10', rating: 4 },
-    { id: 6, src: best6, price: '$15', rating: 5 },
-    { id: 7, src: best7, price: '$20', rating: 3 },
-    { id: 8, src: best1, price: '$12', rating: 4 },
+    { id: 1, src: best1, price: 'KSHS 9000/=', rating: 4 },
+    { id: 2, src: best2, price: 'KSHS 3000/=', rating: 5 },
+    { id: 3, src: best3, price: 'KSHS 7000/=', rating: 3 },
+    { id: 4, src: best4, price: 'KSHS 2000/=', rating: 4 },
+    { id: 5, src: best5, price: 'KSHS 8000/=', rating: 4 },
+    { id: 6, src: best6, price: 'KSHS 6000/=', rating: 5 },
+    { id: 7, src: best7, price: 'KSHS 2000/=', rating: 3 },
+    { id: 8, src: best1, price: 'KSHS 7000/=', rating: 4 },
     // Add more images as needed
   ];
 
@@ -45,14 +45,14 @@ const Galz = () => {
       </nav>
 
       {/* Gallery Images */}
-      <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-4 gap-4  ">
         {images.map(image => (
-          <div key={image.id} className=" p-4 rounded">
+          <div key={image.id} className=" p-4 shadow-md rounded">
             <img src={image.src} alt={`Imag ${image.id}`} className="w-full h-95 object-cover mb-2" />
             <div className="flex justify-between">
-              <span className="text-xl">{image.price}</span>
+              <p><span className="text-xl">{image.price}</span> </p>
               <div className="flex items-center">
-                <span className="text-lg mr-1">Rating:</span>
+                <p className="text-lg mr-1">Rating:</p>
                 {Array.from({ length: image.rating }, (_, index) => (
                   <FaStar key={index} className="text-yellow-500" />
                 ))}
