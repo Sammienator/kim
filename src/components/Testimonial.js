@@ -6,7 +6,7 @@ const Testimonial = () => {
     <div className="flex flex-col items-center bg-[#E3BC62] ">
       <div className="flex justify-between w-11/12 max-w-6xl mt-10">
         {/* Card 1 */}
-        <div className="bg-[#B7FFFB] rounded-lg p-6 shadow-lg mx-2 w-1/2">
+        <div className="bg-[#B7FFFB] rounded-lg p-6 shadow-lg mx-1 w-3/4">
 {/* 
         <img
         src= {Exclusi}
@@ -18,7 +18,7 @@ const Testimonial = () => {
         </div>
 
         {/* Card 2 */}
-        <div className="bg-white rounded-lg p-6 shadow-lg mx-2 w-1/2">
+        <div className="bg-white rounded-lg p-6 shadow-lg mx-1 w-3/4">
           <p className="text-black mb-2 text-3xl">"  PAUL MACHARIA</p>
           <p className="text-black text-xl"> The fabric you used is of top-notch quality. It feels soft against the skin and drapes beautifully. I appreciate the range of customization options available.</p>
         </div>
