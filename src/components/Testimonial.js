@@ -4,7 +4,7 @@ import React from 'react';
 const Testimonial = () => {
   return (
     <div className="flex flex-col items-center bg-[#E3BC62] ">
-      <div className="flex justify-between w-11/12 max-w-3xl mt-10">
+      <div className="flex justify-between w-11/12 max-w-6xl mt-10">
         {/* Card 1 */}
         <div className="bg-[#B7FFFB] rounded-lg p-6 shadow-lg mx-2 w-1/2">
 {/* 
@@ -29,7 +29,7 @@ const Testimonial = () => {
         <button className="mr-2">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="h-10 w-10"
+            className="h-10 w-10 cursor-pointer hover:text-blue-500"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
@@ -45,7 +45,7 @@ const Testimonial = () => {
         <button>
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="h-10 w-10 border bg-[#B7FFFB]"
+            className="h-10 w-10 border bg-[#B7FFFB] cursor-pointer hover:bg-blue-500"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"

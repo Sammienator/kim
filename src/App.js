@@ -12,6 +12,7 @@ import Galz from './components/Galz';
 import Galc from './components/Galc';
 
 
+
 function App() {
   return (
     <>
@@ -26,6 +27,7 @@ function App() {
  
     <Galc/>
     <Testimonial/>
+ 
     <Footer/>
     </>
   );
