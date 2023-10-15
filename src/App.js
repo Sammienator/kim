@@ -5,11 +5,12 @@ import Home from "../src/components/Home";
 import Exclusive from './components/Exclusive';
 
 import Testimonial from './components/Testimonial';
-import Footer from './components/Footer';
+
 import PricingSection from './components/PricingSection';
 import Navbar from './components/Navbar';
 import Galz from './components/Galz';
 import Galc from './components/Galc';
+import Broot from './components/Broot';
 
 
 
@@ -28,7 +29,8 @@ function App() {
     <Galc/>
     <Testimonial/>
  
-    <Footer/>
+  
+    <Broot/>
     </>
   );
 
