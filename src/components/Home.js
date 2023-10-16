@@ -1,11 +1,18 @@
 
 
-import React from 'react';
+import React, { useEffect } from 'react';
 import pic1 from '../assets/pic1.png';
-
+import AOS from 'aos';
 
 
 const Home = () => {
+
+
+
+
+  useEffect(() => {
+    AOS.refresh(); // Refresh AOS whenever the component re-renders
+  }, []);
   return (
     
     <div >
@@ -13,7 +20,8 @@ const Home = () => {
 
 
 <div class=" mx-auto flex px-5 py-5 md:flex-row flex-col items-center bg-[#B7FFFB]">
-    <div class="container lg:flex-grow flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+    <div data-aos="zoom-out-up"data-aos-easing="linear"
+     data-aos-duration="3000" class="container lg:flex-grow flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
       <h1 class="title-font tracking-wide sm:text-5xl md:text-7xl xl:text-8xl mb-4 font-bold text-[#224F34] md:ml-16 ">Welcome to <br/> the world of <br/> style.
       </h1>
       <p class="mb-8 leading-relaxed  text-[#224F34] md:ml-16 ">Explore Our Curated Collection Of Stylish <br/> Clothing And Accessories Tailored to Your <br/> Unique Taste </p>
