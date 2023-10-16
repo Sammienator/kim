@@ -4,19 +4,20 @@ import Home from "../src/components/Home";
 
 import Exclusive from './components/Exclusive';
 
-import Testimonial from './components/Testimonial';
+
 
 import PricingSection from './components/PricingSection';
 import Navbar from './components/Navbar';
 import Galz from './components/Galz';
 import Galc from './components/Galc';
 import Broot from './components/Broot';
+import Brest from './components/Brest';
 
 
 
 function App() {
   return (
-    <>
+    <> 
     <Navbar/>
     <Home/>
    
@@ -27,7 +28,9 @@ function App() {
     <Exclusive/>
  
     <Galc/>
-    <Testimonial/>
+    
+    <Brest/>
+    
  
   
     <Broot/>
