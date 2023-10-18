@@ -1,4 +1,6 @@
-import React from 'react';
+import React, { useEffect } from "react";
+import AOS from "aos";
+
 import { FaStar } from 'react-icons/fa';
 import best1 from '../assets/best1.png'
 import best2 from '../assets/best2.png'
@@ -11,6 +13,7 @@ import best7 from '../assets/best7.png'
 
 
 const Galz = () => {
+
   const images = [
     { id: 1, src: best1, price: 'KSHS 9000/=', rating: 4 },
     { id: 2, src: best2, price: 'KSHS 3000/=', rating: 5 },
@@ -23,9 +26,18 @@ const Galz = () => {
     // Add more images as needed
   ];
 
+
+  useEffect(() => {
+    AOS.refresh(); // Refresh AOS whenever the component re-renders
+  }, []);
   return (
     <section className=" bg-[#E3BC62] py-8 px-4">
-        <h1 className='text-[#224F34] text-4xl  text-center pt-10 mb-8'>BEST SELLING</h1>
+
+      <div data-aos="fade-up-left"
+                data-aos-easing="linear"
+                data-aos-duration="3000">
+
+      <h1 className='text-[#224F34] text-4xl  text-center pt-10 mb-8'>BEST SELLING</h1>
       {/* Small Nav */}
       <nav className="mb-4 ">
         <ul className="flex justify-center ">
@@ -44,8 +56,13 @@ const Galz = () => {
         </ul>
       </nav>
 
+
+      </div>
+        
       {/* Gallery Images */}
-      <div className="grid grid-cols-1 md:grid-cols-4 gap-4  ">
+      <div data-aos="fade-up-right"
+                data-aos-easing="linear"
+                data-aos-duration="3000" className="grid grid-cols-1 md:grid-cols-4 gap-4  ">
         {images.map(image => (
           <div key={image.id} className=" p-4 shadow-md rounded">
             <img src={image.src} alt={`Imag ${image.id}`} className="w-full h-95 object-cover mb-2" />

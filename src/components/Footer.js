@@ -12,29 +12,29 @@ const Footer = () => {
             <img
               src={higene}
               alt="Brand Logo"
-              className="w-2/3 h-2/3 mr-2"
+              className="w-1/2 h-1/2 mr-2"
             />
         
           </div>
-          <div className='flex justify-center items-center mb-4 text-2xl' >
+          <div className='flex justify-center items-center mb-4 text-2xl ' >
                 {/* Social Icons */}
-                <a href="#b" className=" mr-2">
+                <a href="#b" className=" mr-4 ">
               <FaFacebook />
             </a>
-            <a href="#b" className=" mr-2">
+            <a href="#b" className=" mr-4 ">
               <FaTwitter />
             </a>
-            <a href="#b" className=" mr-2">
+            <a href="#b" className=" mr-4 ">
               <FaInstagram />
             </a>
-            <a href="#b" className="">
+            <a href="#b" className="mr-2 ">
               <FaLinkedin />
             </a>
           </div>
         </div>
 
         {/* Column 2 */}
-        <div className="w-full md:w-1/4 mb-8 md:mb-0">
+        <div className="w-full md:w-1/4 mb-8 md:mb-0 underline">
           <div className="text-[#224F34] mb-4">
             <h1 className="mb-2 text-xl">SHOP</h1>
             <ul>
@@ -56,7 +56,7 @@ const Footer = () => {
         </div>
 
         {/* Column 3 */}
-        <div className="w-full md:w-1/4 mb-8 md:mb-0">
+        <div className="w-full md:w-1/4 mb-8 md:mb-0 underline">
           <div className="text-[#224F34] mb-4">
             <h1 className="mb-2 text-xl">Company</h1>
             <ul>
@@ -79,7 +79,7 @@ const Footer = () => {
         </div>
 
         {/* Column 4 */}
-        <div className="w-full md:w-1/4 mb-8 md:mb-0">
+        <div className="w-full md:w-1/4 mb-8 md:mb-0 underline">
           <div className="text-[#224F34] mb-4">
             <h1 className="mb-2">STAY UP TO DATE.</h1>
             {/* Search Bar */}

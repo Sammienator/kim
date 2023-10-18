@@ -1,5 +1,7 @@
-import React from 'react';
+import React, { useEffect } from "react";
 import { FaStar } from 'react-icons/fa';
+import AOS from "aos";
+
 
 import gal1 from "../assets/gal1.png"
 import gal5 from "../assets/gal5.png"
@@ -28,16 +30,32 @@ const pricingData = [
 ];
 
 const PricingSection = () => {
+
+  useEffect(() => {
+    AOS.refresh(); // Refresh AOS whenever the component re-renders
+  }, []);
   return (
 
     <>
-<div className='bg-[#E3BC62]'>  
+<div  className='bg-[#E3BC62]'>  
+
+<div data-aos="fade-down"
+                data-aos-easing="linear"
+                data-aos-duration="2000"
+              >
 
 <h1 className='text-center text-[#224F34]  pt-24  text-5xl'> Trending Fashion</h1>
      <p className='text-center text-[#224F34]  text-xl w-half  '> Get in on the Trend With Our Customized Selection Of Trending Outfits. </p>
 
 
-    <div className="container mx-auto flex flex-col md:flex-row justify-center items-center mt-10">
+  
+</div>
+
+
+    <div data-aos="fade-up"
+                data-aos-easing="linear"
+                data-aos-duration="3000"
+               className="container mx-auto flex flex-col md:flex-row justify-center items-center mt-10">
         
       {pricingData.map((item, index) => (
         <div

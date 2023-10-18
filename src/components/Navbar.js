@@ -24,8 +24,8 @@ const Navbar = () => {
       </div>
       <div className="flex items-center p-4 m-4 hover:text-aqua-900  cursor-pointer">
         {/* Shopping Cart and Login Button */}
-        <FaShoppingCart className="text-gray-700 text-3xl m-4 " />
-        <FaUser className="text-gray-700 text-3xl " />
+        <FaShoppingCart className="text-[#224F34] text-3xl m-4 " />
+        <FaUser className="text-[#224F34] text-3xl " />
       </div>
     </nav>
   );
