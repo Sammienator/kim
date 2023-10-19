@@ -28,7 +28,7 @@ const Home = () => {
                 data-aos="zoom-out-left"
                 data-aos-easing="linear"
                 data-aos-duration="3000"
-                class="inline-flex text-white bg-[#224F34] py-4 px-8 focus:outline-none hover:bg-opacity-80  text-xl md:ml-16"
+                class="inline-flex text-white bg-[#224F34] py-4 px-8 focus:outline-none hover:bg-opacity-80  text-lg md:ml-16"
               >
                 EXPLORE NOW.
               </button>

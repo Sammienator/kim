@@ -60,11 +60,14 @@ const Galz = () => {
       </div>
         
       {/* Gallery Images */}
-      <div data-aos="fade-up-right"
-                data-aos-easing="linear"
-                data-aos-duration="3000" className="grid grid-cols-1 md:grid-cols-4 gap-4  ">
+      <div  className="grid grid-cols-1 md:grid-cols-4 gap-4  ">
         {images.map(image => (
-          <div key={image.id} className=" p-4 shadow-md rounded">
+          <div 
+          data-aos="fade-up-right"
+                data-aos-easing="linear"
+                data-aos-duration="3000"
+
+          key={image.id} className=" p-4 shadow-md rounded">
             <img src={image.src} alt={`Imag ${image.id}`} className="w-full h-95 object-cover mb-2" />
             <div className="flex justify-between">
               <p><span className="text-xl">{image.price}</span> </p>

@@ -52,14 +52,17 @@ const PricingSection = () => {
 </div>
 
 
-    <div data-aos="fade-up"
-                data-aos-easing="linear"
-                data-aos-duration="3000"
+    <div 
                className="container mx-auto flex flex-col md:flex-row justify-center items-center mt-10">
         
       {pricingData.map((item, index) => (
         <div
           key={index}
+          
+          data-aos="fade-up"
+                data-aos-easing="linear"
+                data-aos-duration="3000"
+          
           className="max-w-md w-full md:w-1/3  shadow-md rounded-lg p-4 m-4 text-center"
         >
           <img src={item.image} alt={item.title} className="w-full mx-auto mb-4" />
