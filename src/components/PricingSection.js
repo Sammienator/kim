@@ -29,6 +29,7 @@ const pricingData = [
   },
 ];
 
+// try relook at this code and its funtionality
 const PricingSection = () => {
 
   useEffect(() => {
