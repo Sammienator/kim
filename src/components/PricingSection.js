@@ -29,6 +29,7 @@ const pricingData = [
   },
 ];
 
+// adding this for fun
 // try relook at this code and its funtionality
 const PricingSection = () => {
 
